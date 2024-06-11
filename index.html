@@ -63,12 +63,13 @@
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        userId: '65f97b3873ef8b99b3d6ba49', // Replace with actual user ID
+                        userId: '66430c51a1817e9974a352cd', // Replace with actual user ID
                         subscription: subscription
                     })
                 }).then(function(response) {
                     if (response.ok) {
                         console.log('Successfully subscribed');
+                        console.log(subscription.endpoint);
                     } else {
                         throw new Error('Failed to subscribe');
                     }
